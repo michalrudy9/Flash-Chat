@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7IR-ye-CHl">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
@@ -28,6 +28,9 @@
                                 <state key="normal" title="Log in">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="y7E-Ie-Cs2" kind="show" id="YS5-fc-gP5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5u-V0-7sZ">
                                 <rect key="frame" x="0.0" y="701" width="393" height="48"/>
@@ -41,6 +44,9 @@
                                     <color key="titleColor" name="BrandBlue"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="yxn-aZ-pcC" kind="show" id="aLf-ug-cis"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXQ-uC-SP9">
                                 <rect key="frame" x="43" y="396" width="307.33333333333331" height="60"/>
@@ -65,10 +71,11 @@
                             <constraint firstItem="S5u-V0-7sZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rYh-MX-p75"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Kir-Ed-XFX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="100" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1026.7175572519084" y="-2.1126760563380285"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="K7J-Us-Ygx">
@@ -79,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wH2-5v-SPN" userLabel="EmailView">
-                                <rect key="frame" x="0.0" y="89" width="393" height="60"/>
+                                <rect key="frame" x="0.0" y="133" width="393" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textField" translatesAutoresizingMaskIntoConstraints="NO" id="qfB-8w-p3d" userLabel="textfield">
                                         <rect key="frame" x="0.0" y="-20" width="393" height="128"/>
@@ -104,7 +111,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IX1-HA-aHF" userLabel="PasswordView">
-                                <rect key="frame" x="0.0" y="179" width="393" height="140"/>
+                                <rect key="frame" x="0.0" y="223" width="393" height="140"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textField" translatesAutoresizingMaskIntoConstraints="NO" id="ah6-TC-gTF">
                                         <rect key="frame" x="0.0" y="-16" width="393" height="128"/>
@@ -152,10 +159,14 @@
                             <constraint firstItem="IX1-HA-aHF" firstAttribute="trailing" secondItem="gGB-RG-U9F" secondAttribute="trailing" id="uFp-AL-57y"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="p8Q-eW-InF"/>
+                    <connections>
+                        <segue destination="Cfh-QL-BEq" kind="show" identifier="RegisterToChat" id="oMw-00-I2c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="seE-fa-yhJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1082" y="-315"/>
+            <point key="canvasLocation" x="2008.3969465648854" y="-315.49295774647891"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="N92-hm-uRq">
@@ -166,7 +177,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7O4-Hu-fPn">
-                                <rect key="frame" x="0.0" y="59" width="393" height="689"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="645"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="HwQ-yg-Yjh">
@@ -223,10 +234,11 @@
                             <constraint firstItem="7O4-Hu-fPn" firstAttribute="trailing" secondItem="eRa-aI-3hu" secondAttribute="trailing" id="ztx-UO-aCk"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="RsF-Vt-2mn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NSf-yj-Ujb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2194.6564885496182" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="3121.3740458015268" y="-2.1126760563380285"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="qGn-eR-I5l">
@@ -237,7 +249,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjG-rX-pTd" userLabel="EmailView">
-                                <rect key="frame" x="0.0" y="89" width="393" height="60"/>
+                                <rect key="frame" x="0.0" y="133" width="393" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textField" translatesAutoresizingMaskIntoConstraints="NO" id="53K-9N-lg0" userLabel="textfield">
                                         <rect key="frame" x="0.0" y="-20" width="393" height="128"/>
@@ -262,7 +274,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Xa-j7-ZMB" userLabel="PasswordView">
-                                <rect key="frame" x="0.0" y="179" width="393" height="140"/>
+                                <rect key="frame" x="0.0" y="223" width="393" height="140"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textField" translatesAutoresizingMaskIntoConstraints="NO" id="3oZ-ZF-3bN">
                                         <rect key="frame" x="0.0" y="-16" width="393" height="128"/>
@@ -310,12 +322,37 @@
                             <constraint firstItem="7Xa-j7-ZMB" firstAttribute="top" secondItem="cjG-rX-pTd" secondAttribute="bottom" constant="30" id="qmR-aZ-2y6"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Cr5-kA-bPU"/>
+                    <connections>
+                        <segue destination="Cfh-QL-BEq" kind="show" identifier="LoginToChat" id="bJ5-sm-naJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4xC-6J-pPs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1082" y="389"/>
+            <point key="canvasLocation" x="2008.3969465648854" y="388.73239436619718"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dVJ-Gw-5WI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7IR-ye-CHl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zcJ-PG-rAX">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4Nt-Wt-BsW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JoT-ul-iL1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bJ5-sm-naJ"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
         <image name="textField" width="298" height="93"/>
