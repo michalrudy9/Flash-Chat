@@ -72,6 +72,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Kir-Ed-XFX"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="oXQ-uC-SP9" id="LIL-ec-GQA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
