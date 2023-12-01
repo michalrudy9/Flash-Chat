@@ -114,24 +114,27 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IX1-HA-aHF" userLabel="PasswordView">
-                                <rect key="frame" x="0.0" y="223" width="393" height="140"/>
+                                <rect key="frame" x="0.0" y="223" width="393" height="138"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textField" translatesAutoresizingMaskIntoConstraints="NO" id="ah6-TC-gTF">
-                                        <rect key="frame" x="0.0" y="-16" width="393" height="128"/>
+                                        <rect key="frame" x="0.0" y="-16" width="393" height="126"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eoG-CT-O41" userLabel="Password Textfield">
-                                        <rect key="frame" x="50" y="14" width="292" height="32"/>
+                                        <rect key="frame" x="50" y="14" width="292" height="30"/>
                                         <color key="textColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBZ-9P-AoF" userLabel="Register">
-                                        <rect key="frame" x="0.0" y="92" width="393" height="48"/>
+                                        <rect key="frame" x="0.0" y="90" width="393" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Register">
                                             <color key="titleColor" name="BrandBlue"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerPressed:" destination="yxn-aZ-pcC" eventType="touchUpInside" id="MWb-dT-fWo"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -164,6 +167,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="p8Q-eW-InF"/>
                     <connections>
+                        <outlet property="emailTextfield" destination="jCP-bB-XKT" id="ItF-jL-OeB"/>
+                        <outlet property="passwordTextfield" destination="eoG-CT-O41" id="1aH-BT-IxO"/>
                         <segue destination="Cfh-QL-BEq" kind="show" identifier="RegisterToChat" id="oMw-00-I2c"/>
                     </connections>
                 </viewController>
@@ -357,7 +362,7 @@
         <designable name="oXQ-uC-SP9"/>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="bJ5-sm-naJ"/>
+        <segue reference="oMw-00-I2c"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
