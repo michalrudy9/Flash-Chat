@@ -293,13 +293,16 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIC-lh-szX" userLabel="Register">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIC-lh-szX">
                                         <rect key="frame" x="0.0" y="92" width="393" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Log In">
                                             <color key="titleColor" name="BrandLightBlue"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginPressed:" destination="y7E-Ie-Cs2" eventType="touchUpInside" id="kxL-Kr-0C9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -332,6 +335,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="Cr5-kA-bPU"/>
                     <connections>
+                        <outlet property="emailTextfield" destination="KO0-fG-7Ga" id="EM4-Ld-Das"/>
+                        <outlet property="passwordTextfield" destination="bB7-qc-8QX" id="1bi-yk-TAg"/>
                         <segue destination="Cfh-QL-BEq" kind="show" identifier="LoginToChat" id="bJ5-sm-naJ"/>
                     </connections>
                 </viewController>
@@ -362,7 +367,7 @@
         <designable name="oXQ-uC-SP9"/>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="oMw-00-I2c"/>
+        <segue reference="bJ5-sm-naJ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
