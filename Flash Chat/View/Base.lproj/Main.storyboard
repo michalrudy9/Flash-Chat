@@ -205,6 +205,9 @@
                                         <color key="tintColor" name="BrandLightPurple"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="paperplane.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="sendPressed:" destination="Cfh-QL-BEq" eventType="touchUpInside" id="2d3-3l-T93"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -240,6 +243,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="messageTextfield" destination="eJC-jb-0DT" id="0KI-cC-ayw"/>
                         <outlet property="tableView" destination="7O4-Hu-fPn" id="ocJ-mz-vvh"/>
                     </connections>
                 </viewController>
