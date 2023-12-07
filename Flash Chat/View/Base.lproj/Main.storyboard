@@ -49,7 +49,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXQ-uC-SP9" customClass="CLTypingLabel" customModule="CLTypingLabel">
-                                <rect key="frame" x="196.66666666666666" y="396" width="0.0" height="60"/>
+                                <rect key="frame" x="43" y="396" width="307.33333333333331" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="xfx-30-bRN"/>
                                 </constraints>
@@ -367,7 +367,9 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="oXQ-uC-SP9"/>
+        <designable name="oXQ-uC-SP9">
+            <size key="intrinsicContentSize" width="307.33333333333331" height="60"/>
+        </designable>
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="bJ5-sm-naJ"/>
