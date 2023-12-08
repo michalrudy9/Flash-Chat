@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srU-Gu-q4F">
-                                <rect key="frame" x="0.0" y="757" width="393" height="61"/>
+                                <rect key="frame" x="0.0" y="654" width="393" height="61"/>
                                 <color key="backgroundColor" name="BrandBlue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="TIi-on-KNx"/>
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5u-V0-7sZ">
-                                <rect key="frame" x="0.0" y="701" width="393" height="48"/>
+                                <rect key="frame" x="0.0" y="598" width="393" height="48"/>
                                 <color key="backgroundColor" name="BrandLightBlue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="9HP-8Y-Xi3"/>
@@ -49,7 +49,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXQ-uC-SP9" customClass="CLTypingLabel" customModule="CLTypingLabel">
-                                <rect key="frame" x="43" y="396" width="307.33333333333331" height="60"/>
+                                <rect key="frame" x="43" y="344.66666666666669" width="307.33333333333331" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="xfx-30-bRN"/>
                                 </constraints>
@@ -85,11 +85,11 @@
             <objects>
                 <viewController id="yxn-aZ-pcC" customClass="RegisterViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HaN-4D-IkB">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wH2-5v-SPN" userLabel="EmailView">
-                                <rect key="frame" x="0.0" y="133" width="393" height="60"/>
+                                <rect key="frame" x="0.0" y="30" width="393" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textField" translatesAutoresizingMaskIntoConstraints="NO" id="qfB-8w-p3d" userLabel="textfield">
                                         <rect key="frame" x="0.0" y="-20" width="393" height="128"/>
@@ -114,7 +114,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IX1-HA-aHF" userLabel="PasswordView">
-                                <rect key="frame" x="0.0" y="223" width="393" height="138"/>
+                                <rect key="frame" x="0.0" y="120" width="393" height="138"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textField" translatesAutoresizingMaskIntoConstraints="NO" id="ah6-TC-gTF">
                                         <rect key="frame" x="0.0" y="-16" width="393" height="126"/>
@@ -176,20 +176,20 @@
             </objects>
             <point key="canvasLocation" x="2008.3969465648854" y="-315.49295774647891"/>
         </scene>
-        <!--Chat View Controller-->
+        <!--⚡️FlashChat-->
         <scene sceneID="N92-hm-uRq">
             <objects>
                 <viewController id="Cfh-QL-BEq" customClass="ChatViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HlH-xz-1xg">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7O4-Hu-fPn">
-                                <rect key="frame" x="0.0" y="103" width="393" height="645"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="645"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCa-xj-W4E">
-                                <rect key="frame" x="0.0" y="756" width="393" height="62"/>
+                                <rect key="frame" x="0.0" y="653" width="393" height="62"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a message..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eJC-jb-0DT" userLabel="Message Textfield">
                                         <rect key="frame" x="20" y="13" width="303" height="34"/>
@@ -235,7 +235,7 @@
                             <constraint firstItem="7O4-Hu-fPn" firstAttribute="trailing" secondItem="eRa-aI-3hu" secondAttribute="trailing" id="ztx-UO-aCk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="RsF-Vt-2mn">
+                    <navigationItem key="navigationItem" title="⚡️FlashChat" id="RsF-Vt-2mn">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="cnb-iw-SEq">
                             <connections>
                                 <action selector="logOutPressed:" destination="Cfh-QL-BEq" id="cYf-91-Iid"/>
@@ -256,11 +256,11 @@
             <objects>
                 <viewController id="y7E-Ie-Cs2" customClass="LoginViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ueT-iD-4GK">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjG-rX-pTd" userLabel="EmailView">
-                                <rect key="frame" x="0.0" y="133" width="393" height="60"/>
+                                <rect key="frame" x="0.0" y="30" width="393" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textField" translatesAutoresizingMaskIntoConstraints="NO" id="53K-9N-lg0" userLabel="textfield">
                                         <rect key="frame" x="0.0" y="-20" width="393" height="128"/>
@@ -285,7 +285,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Xa-j7-ZMB" userLabel="PasswordView">
-                                <rect key="frame" x="0.0" y="223" width="393" height="140"/>
+                                <rect key="frame" x="0.0" y="120" width="393" height="140"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textField" translatesAutoresizingMaskIntoConstraints="NO" id="3oZ-ZF-3bN">
                                         <rect key="frame" x="0.0" y="-16" width="393" height="128"/>
@@ -352,9 +352,15 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7IR-ye-CHl" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zcJ-PG-rAX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="zcJ-PG-rAX">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" name="BrandBlue"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
